@@ -11,7 +11,7 @@ class Battery(Serviceable):
 
 class SpindlerBattery(Battery):
     def needs_service(self) -> bool:
-        return (self.current_date.year - self.last_service_date.year) >= 2
+        return (self.current_date.year - self.last_service_date.year) >= 3
 
 class NubbinBattery(Battery):
     def needs_service(self) -> bool:
